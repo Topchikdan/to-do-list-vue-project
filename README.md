@@ -1,5 +1,108 @@
-# Vue 3 + Vite
+# Todo App-Vue
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> Минималистичное приложение списка задач на Vue 3 + Vite.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## Содержание
+
+- [О проекте](#о-проекте)
+- [Возможности](#возможности)
+- [Быстрый старт](#быстрый-старт)
+- [Сборка](#сборка)
+- [Структура проекта](#структура-проекта)
+- [CSS-переменные](#css-переменные)
+- [Лицензия](#лицензия)
+
+---
+
+## О проекте
+
+Минималистичное приложение списка задач на Vue 3 с использованием Vite и тёмной темой.
+
+| Технология | Описание |
+|---|---|
+| Vue 3 | Реактивный UI, `<script setup>` SFC |
+| Vite | Сборщик и dev-сервер |
+| SCSS | Глобальные стили и CSS-переменные |
+| Noto Sans JP | Шрифт (Google Fonts) |
+
+---
+
+## Возможности
+
+- Добавление новой задачи через поле ввода (кнопка `+` или клавиша `Enter`)
+- Отметка задачи как выполненной через кастомный чекбокс
+- Удаление задачи кнопкой `✕`
+- Фиксированная панель добавления внизу экрана
+- Адаптивная тёмная тема
+
+---
+
+## Быстрый старт
+
+Нужен [Node.js](https://nodejs.org/) версии 18 или новее.
+
+```bash
+# 1. Клонируйте репозиторий
+git clone https://github.com/Topchikdan/to-do-list-vue-project.git
+cd to-do-list-vue-project
+
+# 2. Установите зависимости
+npm install
+
+# 3. Запустите в режиме разработки
+npm run dev
+```
+
+Откройте адрес из терминала (обычно http://localhost:5173).
+
+---
+
+## Сборка
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## Структура проекта
+
+```
+.
+├── index.html
+├── package.json
+├── src/
+│   ├── App.vue          # корневой компонент (логика + шаблон)
+│   ├── main.js          # точка входа, монтирование приложения
+│   ├── style.scss       # глобальные стили и CSS-переменные
+│   ├── styles/          # дополнительные стили
+│   └── vite.config.js
+└── README.md
+```
+
+---
+
+## CSS-переменные
+
+Цветовая схема задаётся в `style.scss`:
+
+```scss
+--main-bg-color:     #292832   /* Фон приложения              */
+--main-accent-color: #7E41EA   /* Акцентный цвет (фиолетовый) */
+--main-orange-color: #E55A3C   /* Кнопка удаления             */
+```
+
+---
+
+## Лицензия
+
+Не указана.
+
+---
+
+<div align="center">
+  <a href="https://github.com/Topchikdan/to-do-list-vue-project/stargazers">Поставьте звезду, если проект полезен!</a>
+</div>
